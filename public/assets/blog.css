@@ -26,6 +26,10 @@
       font-size: 3rem;
     }
   }
+
+  .nav-item .nav-link {
+    color : #676168
+  }
   
   .nav-scroller {
     position: relative;

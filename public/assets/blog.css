@@ -38,6 +38,8 @@
   --light-2: #f5f5f5;
   --light-3: #fafafa;
   --white: #ffffff;
+  --brown: #755139;
+  --brown-light: #F2EDD7;
   --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
   --gradient-2: linear-gradient(180deg, #155bd5 13.02%, #00d4d7 85.42%);
   --gradient-3: linear-gradient(180deg, #155bd5 0%, #8f15d5 100%);
@@ -493,7 +495,7 @@
   .header-eight {
     position: relative;
     padding:100px 0 100px 0;
-    background: var(--primary);
+    background: var(--brown);
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-eight {
@@ -552,7 +554,7 @@
   .header-eight .primary-btn {
     margin-right: 12px;
     background-color: var(--white);
-    color: var(--primary);
+    color: var(--brown);
     border: 1px solid transparent;
   }
   .header-eight .primary-btn:hover {
@@ -577,7 +579,7 @@
   }
   .header-eight .video-button .icon-btn {
     background: var(--white);
-    color: var(--primary);
+    color: var(--brown);
   }
   
   /*======================================

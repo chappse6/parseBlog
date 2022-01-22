@@ -494,7 +494,7 @@
   ========================================*/
   .header-eight {
     position: relative;
-    padding:100px 0 100px 0;
+    padding:120px 0 80px 0;
     background: var(--brown);
   }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -741,12 +741,60 @@
    * Footer
    */
   .blog-footer {
-    padding: 2.5rem 0;
+    color: var(--white);
+    background-color: var(--black);
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding:0px 1rem;
+  }
+  .blog-footer .footerCtaWrapper{
+    display: flex;
+    flex-direction: column;
+    padding:max(40px, 0.666667rem) 0px;
+    margin: auto 0px;
+  }
+  .blog-footer .footerStyledHeading{
+    margin-bottom: max(40px, 0.666667rem);
+  }
+  .blog-footer .footerBigLogoWrapper{
+    flex-direction: row;
+    align-items: flex-end;
+    display: flex;
+    /*height: 30vh;*/
+  }
+
+  .blog-footer .footerBigLogoWrapper .footerBigLogo{
+    font-size: 15rem;
+    line-height: 15rem;
+    text-decoration: none;
+    outline: none;
+    color: var(--white);
+    font-family: 'Do Hyeon', sans-serif;
+  }
+
+  .blog-footer .footerBigLogoWrapper .footerBigLogoExplain{
+    margin-bottom: calc(0.583333rem);
+  }
+
+  .blog-footer .footerLinkWrapper{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding:max(40px, 0.666667rem) 0px;
+  }
+
+  .blog-footer .footerLinks{
+    font-size: 2rem;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .blog-footer .footerLinks a{
+    padding:5px;
+  }
+
+  .blog-footer .copyRight {
+    margin-bottom: 0;
     color: #999;
     text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
-  }
-  .blog-footer p:last-child {
-    margin-bottom: 0;
+    padding: max(15px, 0.25rem) 0px;
   }

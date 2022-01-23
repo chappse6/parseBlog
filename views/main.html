@@ -360,8 +360,14 @@
       </div>
     </footer>
 
+    <a href="#" id = "backToTop" class="scroll-top">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!--====== js ======-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/public/assets/popper.min.js"></script>
     <script src="/public/assets/bootstrap.min.js"></script>
     <script src="/public/assets/holder.min.js"></script>
@@ -381,6 +387,23 @@
         navbarTogglerNine.classList.toggle("active");
       });
 
+    </script>
+    <script>
+      jQuery(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#backToTop').fadeIn(100);
+            $('#backToTop').css("display", "flex");
+          } else {
+            $('#backToTop').fadeOut(150);
+            $('#backToTop').css("display", "none");
+          }
+        });
+        $('#backToTop').click(function (e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop: 0}, 200);
+        });
+      });
     </script>
   </body>
 </html>
